@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Event Architecture | Wata Corporation</title>
+    <link
+      rel="stylesheet"
+      media="all"
+      href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600"
+    />
+    <link rel="stylesheet" href="css/a5c3d540.app.css" media="all" />
+  </head>
+
+  <body class="no-js">
+    <div class="container">
+      <div class="reveal">
+        <div class="state-background"></div>
+        <div class="logo-wata">
+          <img src="img/logo.png" alt="" height="75" />
+          <h3 class="description">
+            The talkings of the Event-driven architecture.
+          </h3>
+        </div>
+        <div class="slides">
+          <section data-state="about white" class="about white" id="what">
+            <div class="holder">
+              <div class="inner">
+                <h2>What is Event-driven Architecture (EDA)?</h2>
+                <div class="clear"></div>
+                <div class="col">
+                  <h3>Event processing styles</h3>
+                  <ul>
+                    <li>Simple event processing</li>
+                    <li>Event stream processing</li>
+                    <li>Complex event processing</li>
+                    <li>Online event processing</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>Related patterns</h3>
+                  <ul>
+                    <li>The Saga and CQRS patterns</li>
+                    <li>
+                      The Aggregate pattern is used to structure the business
+                      logic
+                    </li>
+                    <li>
+                      The Transactional pattern is used to publish events as
+                      part of a database transaction
+                    </li>
+                    <li>
+                      Event sourcing is sometimes used to publish domain events
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="home">
+            <div class="holder">
+              <div class="inner">
+                <div class="home">
+                  <h1>
+                    <img
+                      src="img/apache-kafka-streaming-platform.jpeg"
+                      alt=""
+                      height="600"
+                    />
+                  </h1>
+                  <h4>
+                    Apache Kafka is a framework implementation of a software bus
+                    using stream-processing. It is an open-source software
+                    platform developed by the Apache Software Foundation written
+                    in Scala and Java. The project aims to provide a unified,
+                    high-throughput, low-latency platform for handling real-time
+                    data feeds. Kafka can connect to external systems (for data
+                    import/export) via Kafka Connect and provides Kafka Streams.
+                  </h4>
+                  <h3>Monitoring end-to-end performance requires tracking metrics from brokers, consumer, and producers</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="architecture">
+            <section data-state="m6 white" class="project white">
+              <h2>Kafka Architecture</h2>
+              <h3>Kafka was originally developed at LinkedIn</h3>
+              <div class="holder">
+                <div
+                  class="inner"
+                  style="
+                    background: url('./img/kafka-intro.png') center center
+                      no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+              </div>
+            </section>
+            <section data-state="m5 white" class="project white">
+              <div class="holder">
+                <div class="inner">
+                  <h2>Kafka Structure</h2>
+                  <div class="holder">
+                    <div
+                      class="inner"
+                      style="
+                        background: url('./img/kafka-structure.png') center center
+                          no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-state="m5 white" class="project white">
+              <div class="holder">
+                <div class="inner">
+                  <h2>Simple Microservice</h2>
+                  <div class="holder">
+                    <div
+                      class="inner"
+                      style="
+                        background: url('./img/kafka-ecommerce-1.png') center center
+                          no-repeat;
+                        background-size: contain;
+                        background-color: #fff;
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-state="m5 white" class="project white">
+              <div class="holder">
+                <div class="inner">
+                  <h2>Really Picture</h2>
+                  <div class="holder">
+                    <div
+                      class="inner"
+                      style="
+                       background: url('./img/kafka-ecommerce-2.png') center center
+                          no-repeat;
+                        background-size: contain;
+                        background-color: #fff;
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-state="m5 white" class="project white">
+              <div class="holder">
+                <div class="inner">
+                  <h2>Microservice with Kafka</h2>
+                  <div class="holder">
+                    <div
+                      class="inner"
+                      style="
+                       background: url('./img/kafka-ecommerce.png') center center
+                          no-repeat;
+                        background-size: contain;
+                        background-color: #fff;
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section id="howto">
+            <section class="blog-post">
+              <div class="holder">
+                <div class="inner">
+                  <h2>How to with Kafka</h2>
+                  <div class="holder">
+                    <div
+                      class="inner"
+                      style="
+                        background: url('./img/diagram.png') center center
+                          no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section id="qa">
+            <section>
+              <div class="holder">
+                <div class="inner">
+                  <h2>Q & A</h2>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+
+        <div class="controls">
+          <div class="notes"></div>
+          <a class="up" href="index.html#"
+            ><span class="icon-caret-up"></span
+          ></a>
+          <a class="left" href="index.html#"
+            ><span class="icon-caret-left"></span
+          ></a>
+          <a class="right" href="index.html#"
+            ><span class="icon-caret-right"></span
+          ></a>
+          <a class="down" href="index.html#"
+            ><span class="icon-caret-down"></span
+          ></a>
+        </div>
+        <div class="nav-arrow">
+          <div class="label">
+            <div class="icon-list"></div>
+            MENU
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / container -->
+
+    <div id="navigation">
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#" target="_blank"><span class="icon-facebook"></span></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><span class="icon-twitter"></span></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><span class="icon-linkedin"></span></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><span class="icon-pinterest"></span></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"
+              ><span class="icon-google-plus"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="index.html#/home"><img src="img/logo.png" alt="" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#/home">Home</a></li>
+          <li><a href="index.html#/what">What's?</a></li>
+          <li><a href="index.html#/architecture">Architecture</a></li>
+          <li><a href="index.html#/howto">How to</a></li>
+          <li class="last"><a href="index.html#/qa">Q&A</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- / footer -->
+
+    <script src="//code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write("<script src='js/jquery-1.8.2.min.js'>\x3C/script>");
+    </script>
+    <script src="js/640425a8.main.js"></script>
+  </body>
+</html>
